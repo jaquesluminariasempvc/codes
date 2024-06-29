@@ -1,13 +1,4 @@
-   <div id="contador">
-    <span id="antes" class="texto-esquerda"><b>Promoção </b> </span>
-    <span id="dias" class="numero">00</span>
-    <span id="horas" class="numero">00</span>
-    <span id="minutos" class="numero">00</span>
-    <span id="segundos" class="numero">00</span>
-   <span id="depois" class="texto-direita"> <i class="fa fa-bolt fa-1x" aria-hidden="true"></i> Relâmpago</span>
-</div>
-    <div id="msg" style="display: none;"><b>Promoção encerrada!</b></div> 
- <div id="msgpromo"></div> 
+
 <script>
     var dataTerminoPromocao = new Date('2024/06/28 22:32:00').getTime();
     var intervalo = setInterval(atualizarContador, 1000);
@@ -52,46 +43,3 @@
     window.onload = atualizarContador;
 </script>
 
-<style>
-    .disabled {
-        display: none;
-    }
-    .info {
-        font-family: Arial, Helvetica, sans-serif;
-        color: #333;
-        background-color: #fff;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        display: inline-block;
-        width: 100%;
-        margin-left: 0px;
-    }
-    #contador {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-          padding: 10px;
-      border:1px solid #ddd;
-    }
-    .numero {
-        font-size: 18px;
-        color: #444;
-        padding: 5px 10px;
-        border: 1px solid #ddd;
-        margin: 0 2px;
-       border-radius: 4px;
-    }
-    .texto-esquerda, .texto-direita {
-        color: #24A4F0;
-        font-size: 18px;
-    }
-    #msg {
-        font-size: 18px;
-        color: #24A4F0;
-        text-align: center;
-        margin-top: 5px;
-        display: none;
-    }
-</style>
