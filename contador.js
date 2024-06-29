@@ -1,6 +1,6 @@
 
 <script>
-    var dataTerminoPromocao = new Date('2024/06/28 22:32:00').getTime();
+    var dataTerminoPromocao = new Date('2024/06/28 23:08:00').getTime();
     var intervalo = setInterval(atualizarContador, 1000);
 
     function atualizarContador() {
