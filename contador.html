@@ -7,7 +7,7 @@
    <span id="depois" class="texto-direita"> <i class="fa fa-bolt fa-1x" aria-hidden="true"></i> Relâmpago</span>
 </div>
     <div id="msg" style="display: none;"><b>Promoção encerrada!</b></div> 
-
+ <div id="msgpromo"></div> 
 <script>
     var dataTerminoPromocao = new Date('2024/06/28 22:32:00').getTime();
     var intervalo = setInterval(atualizarContador, 1000);
@@ -51,6 +51,7 @@
     // Chamando a função de atualizar o contador imediatamente após o carregamento da página
     window.onload = atualizarContador;
 </script>
+
 <style>
     .disabled {
         display: none;
